@@ -139,16 +139,16 @@ delete from books
 where book_id = 21;
 
 #19. Write a SQL query to retrieve the total number of books in the Books table. 
-
+select count(book_id) from books;
 
 #20. Write a SQL query to retrieve the average price of books in the Books table. 
-
+select avg(price) from books; 
 
 #21. Write a SQL query to retrieve the maximum quantity of orders in the Orders table. 
-
+select max(quantity) from orders;
 
 #22. Write a SQL query to retrieve the minimum publication date of books in the Books table.
-
+select min(publication_date) from books;
 
 #23. Write a GRANT statement to grant SELECT privilege to bookstore_user on the Orders table. 
 create user 'bookstore_user@localhost' identified by 'root';
